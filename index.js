@@ -3,6 +3,8 @@
 import express from "express";
 import OpenAI from "openai";
 import dotenv from "dotenv";
+import cors from "cors";
+app.use(cors());
 
   let system = `Du bist ein erfahrener Fitnesstrainer mit Spezialisierung auf Calisthenics.`
   let assistant = `const trainingsplan = {"Ziele": ["z. B. Grundkraft verbessern"], "Montag": ["Warm-up:", "Jumping-jacks ( 1 x 30s )", "Pause: 30s", "Skilltraining:", "Handstand an der Wand ( 1 x 40s )", "Hauptteil:", "Liegestützen ( 3 x 10 wdh. 30s Pause )", "Pause: 60s", "Klimmzüge ( 3 x 5 wdh. 30s Pause )", "Cool-down:", "Schulterdehnung"]}`

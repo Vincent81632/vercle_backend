@@ -22,7 +22,7 @@ app.post("/api/frage", async (req, res) => {
 
   try {
     const completion = await openai.chat.completions.create({
-      model: "gpt-4",
+      model: "gpt-5-nano",
       messages: [
         { role: "user", content: frage },
         { role: "system", content: system },
